@@ -53,7 +53,6 @@ new_sentence = new_sentence[0].upper() + new_sentence[1:]
 if  new_sentence[-1].isalnum():
     new_sentence = new_sentence+'.'
 
-print(f"{author}:", tagged_rndm_sentence)
 print(f"{author}:", new_sentence)
 
 
