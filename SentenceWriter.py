@@ -3,6 +3,7 @@ from nltk import pos_tag
 from nltk.corpus import brown
 import numpy as np
 from nltk.tokenize.treebank import TreebankWordDetokenizer
+import re
 
 tagged_words = brown.tagged_words()
 tagged_words_dict = {}
@@ -16,7 +17,10 @@ for tup in tagged_words:
 for k,v in tagged_words_dict.items():
     tagged_words_dict[k] = list(set(v))
 
-sentences = gutenberg.sents('shakespeare-macbeth.txt')
+work = gutenberg.fileids()[np.random.randint(len(gutenberg.fileids()))]
+author = re.findall('(\w+)-',work)[0].title()
+
+sentences = gutenberg.sents(work)
 
 sentence_value = np.random.randint(len(sentences))
 rndm_sentence = sentences[sentence_value]
@@ -39,7 +43,7 @@ for tup in tagged_rndm_sentence:
 
 new_sentence = TreebankWordDetokenizer().detokenize(new_sentence)
 
-print(new_sentence)
+print(f"{author}:", new_sentence)
 
 
 
