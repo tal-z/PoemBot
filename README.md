@@ -11,3 +11,9 @@ This repo is for files related to composing poems by algorithm.
 4) Iterate through the tagged sentence from step two, and for each word:    Check if the word is purely alphabetical (this stops me from fucking up the punctuation too badly).         If the word is purely alphabetical, check if its POS-tag is contained in the tagged-words dict from step 3.             If both conditions are met, select a word at random from the respective dictionary entry, and add it to a list.     If any of the above conditions are not met, add the original word from the random sentence in step 1 to the list instead.
 5) Detokenize the list of words into a sentence. 
 6) Print out the name of the author and the sentence.
+
+## Use
+
+`from SentenceWriter import write_sentence()
+`
+`write_sentence()
