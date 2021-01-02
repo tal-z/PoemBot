@@ -20,7 +20,7 @@ Simply import and deploy the only function in the SentenceWriter module as follo
     write_sentence()
 This will return a tuple length 2, with the author's surname in the first position and the randomly-generated sentence that imitates their style in the second position. Like the following example:
 
-`('Edgeworth', 'The non-western batten inter Somerville, following Ireland, multiplies, by these unmodified monuments, cast the understanding or hydrous glove past an jealous war.')`
+`('Milton', 'Say, Woman, what regards this whichever-the-hell thou steroid prefabricated?')`
 
 
 
