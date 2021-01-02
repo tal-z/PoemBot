@@ -22,3 +22,13 @@ This will return a tuple length 2, with the author's surname in the first positi
 
 `('Edgeworth', 'The non-western batten inter Somerville, following Ireland, multiplies, by these unmodified monuments, cast the understanding or hydrous glove past an jealous war.')`
 
+
+
+Here are some random outputs:
+
+-('Bryant', 'Plasticity Oh, particle, toleration propriety, beware me a stagecoach, dimensionally!')
+-('Austen', "The output-axis persists legitimately outwit t' bat, & exacts its bookshelf tarpon.")
+-('Shakespeare', 'He need my Lord atop interstitial, completed unofficial poems unlike his linguistics to me.')
+-('Chesterton', "The middle-sized maget deemed his congenital magnetism tactically 'round the lapel sonogram, besides complimenting it.")
+
+
