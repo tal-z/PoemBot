@@ -6,7 +6,8 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 import re
 
 
-"""Step 1: Build dictionary of tagged words"""
+"""Step 1: Build dictionary of tagged words.
+"""
 tagged_words = brown.tagged_words()
 tagged_words_dict = {}
 for tup in tagged_words:
@@ -30,30 +31,20 @@ rndm_sentence = sentences[np.random.randint(len(sentences))]
 
 tagged_rndm_sentence = pos_tag(rndm_sentence)
 
+"""Step 3: Replace every word in the sentence with another word that can have the same POS."""
 
-new_sentence = []
-for tup in tagged_rndm_sentence:
-    if tup[0].isalpha():
-        if tup[1] in tagged_words_dict:
-            rndm_num = np.random.randint(len(tagged_words_dict[tup[1]]))
-            rndm_word = tagged_words_dict[tup[1]][rndm_num]
-            if rndm_word.isalpha():
-                new_word = rndm_word
-            else:
-                new_word = tup[0]
-        else:
-            new_word = tup[0]
-    else:
-        new_word = tup[0]
-    new_sentence.append(new_word)
-
+new_sentence = [tup[0] if tup[1] in ['DT', 'NNP', '.', ','] or tup[1] not in tagged_words_dict else tagged_words_dict[tup[1]][np.random.randint(len(tagged_words_dict[tup[1]]))] for tup in tagged_rndm_sentence]
 
 new_sentence = str(TreebankWordDetokenizer().detokenize(new_sentence))
 new_sentence = new_sentence[0].upper() + new_sentence[1:]
 if  new_sentence[-1].isalnum():
     new_sentence = new_sentence+'.'
 
+print(f"{author}:", tagged_rndm_sentence)
 print(f"{author}:", new_sentence)
+for tag_s, new_s in zip(tagged_rndm_sentence, new_sentence.split()):
+    print(tag_s, new_s)
+
 
 
 
