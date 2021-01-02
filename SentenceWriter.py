@@ -50,7 +50,7 @@ def write_sentence():
      #   print(tag_s, new_s)
 
 
-    if len(new_sentence) <= 2:
+    if len(new_sentence) <= 3:
         return write_sentence()
     else:
         return (author, new_detokenized_sentence)
