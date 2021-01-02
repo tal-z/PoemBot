@@ -53,9 +53,8 @@ def write_sentence():
 
     if len(new_sentence) <= 3:
         return write_sentence()
+    if len(author) + len(new_detokenized_sentence) > 278:
+        return write_sentence()
     else:
         return (author, re.sub('[\)]', '', new_detokenized_sentence))
-
-
-
 
