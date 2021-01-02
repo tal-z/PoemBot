@@ -26,9 +26,9 @@ This will return a tuple length 2, with the author's surname in the first positi
 
 Here are some random outputs:
 
- -('Bryant', 'Plasticity Oh, particle, toleration propriety, beware me a stagecoach, dimensionally!')
- -('Austen', "The output-axis persists legitimately outwit t' bat, & exacts its bookshelf tarpon.")
- -('Shakespeare', 'He need my Lord atop interstitial, completed unofficial poems unlike his linguistics to me.')
- -('Chesterton', "The middle-sized maget deemed his congenital magnetism tactically 'round the lapel sonogram, besides complimenting it.")
+- ('Bryant', 'Plasticity Oh, particle, toleration propriety, beware me a stagecoach, dimensionally!')
+- ('Austen', "The output-axis persists legitimately outwit t' bat, & exacts its bookshelf tarpon.")
+- ('Shakespeare', 'He need my Lord atop interstitial, completed unofficial poems unlike his linguistics to me.')
+- ('Chesterton', "The middle-sized maget deemed his congenital magnetism tactically 'round the lapel sonogram, besides complimenting it.")
 
 
