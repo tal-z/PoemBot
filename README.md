@@ -15,5 +15,5 @@ This repo is for files related to composing poems by algorithm.
 ## Use
 
 `from SentenceWriter import write_sentence()
-`
+
 `write_sentence()
