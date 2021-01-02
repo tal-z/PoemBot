@@ -15,7 +15,7 @@ This repo is for files related to composing poems by algorithm.
 ## Use
 Simply import and deploy the only function in the SentenceWriter module as follows:
 
-    from SentenceWriter import write_sentence()
+    from SentenceWriter import write_sentence
 
     write_sentence()
 This will return a tuple length 2, with the author's surname in the first position and the randomly-generated sentence that imitates their style in the second position. Like the following example:
