@@ -1,7 +1,7 @@
 # PoemBot
 
 ## About
-This repo is for files related to composing poems by algorith.
+This repo is for files related to composing poems by algorithm.
 
 ## Guide
 #### SentenceWriter.py:
