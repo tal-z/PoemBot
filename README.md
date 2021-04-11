@@ -1,7 +1,7 @@
 # WriterBot
 
 ## About
-This repo is for files related to composing poems by algorithm. And now for posting them to twitter.
+This repo is for files related to composing poems by algorithm. And now for posting them to twitter. You can post to writerbot yourself, by visiting the (WriterBot controller on my website)[https://talzaken.pythonanywhere.com/writerbot].
 
 ## Guide
 #### SentenceWriter.py:
