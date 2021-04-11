@@ -1,4 +1,4 @@
-# PoemBot
+# WriterBot
 
 ## About
 This repo is for files related to composing poems by algorithm. And now for posting them to twitter.
